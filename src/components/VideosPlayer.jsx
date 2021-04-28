@@ -1,3 +1,4 @@
+import React from "react"
 import ReactPlayer from "react-player"
 
 const playerStyle = {
@@ -5,5 +6,9 @@ const playerStyle = {
 }
 
 export default function VideosPlayer() {
-  return <ReactPlayer width='200' style={playerStyle} url='https://www.youtube.com/watch?v=wmCW8xSWGZY&t=37s' />
+  return (
+    <React.Suspense fallback={<p>loading...</p>}>
+      <ReactPlayer width='200' style={playerStyle} url='https://www.youtube.com/watch?v=wmCW8xSWGZY&t=37s' />
+    </React.Suspense>
+  )
 }
