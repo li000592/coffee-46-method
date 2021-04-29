@@ -1,9 +1,9 @@
 import React from "react"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import "./App.css"
-import StoryScreen from "./screens/StoryScreen"
+import StoryScreen from "./screens/Story/StoryScreen"
 import TabNavigation from "./components/TabNavigation"
-import TimerScreen from "./screens/TimerScreen"
+import TimerScreen from "./screens/Timer/TimerScreen"
 
 export default function App() {
   return (

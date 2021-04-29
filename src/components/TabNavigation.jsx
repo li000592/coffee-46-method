@@ -15,6 +15,10 @@ const useStyles = makeStyles({
     boxShadow: "0 3px 5px 2px rgba(0, 0, 0, .3)",
     left: 0,
   },
+  button: {
+    paddingRight: "4rem",
+    paddingLeft: "4rem",
+  },
 })
 export default function TabNavigation() {
   const classes = useStyles()
@@ -22,10 +26,10 @@ export default function TabNavigation() {
   return (
     <BottomNavigation className={classes.root}>
       <NavLink to='/'>
-        <BottomNavigationAction label='Timer' icon={<AccessAlarm />} />
+        <BottomNavigationAction className={classes.button} label='Timer' icon={<AccessAlarm />} />
       </NavLink>
       <NavLink to='/story'>
-        <BottomNavigationAction label='Story' icon={<LibraryBooks />} />
+        <BottomNavigationAction className={classes.button} label='Story' icon={<LibraryBooks />} />
       </NavLink>
     </BottomNavigation>
   )
