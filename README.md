@@ -1,10 +1,12 @@
 ## coffee 4:6 method(PWA)
 
-Library: React, @aterial-ui, React Router, react-player, react-countdown-circle-timer
+Library: React, @material-ui, React Router, react-player, react-countdown-circle-timer
 
 ### Domo Link:
 
 https://46method.netlify.app
+
+### `yarn install`
 
 ### `yarn start`
 
